@@ -10,6 +10,7 @@
 		"wordpress": "wp-env start"
 	},
 	"dependencies": {
+		"@shelob9/block-content": "0.2.0",
 		"@tailwindcss/forms": "^0.2.1",
 		"@tailwindcss/typography": "^0.4.0",
 		"@testing-library/react": "^11.2.3",

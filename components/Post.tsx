@@ -1,4 +1,6 @@
 import { createElement, FC } from "react"
+import BlockContent from "@shelob9/block-content";
+
 export type hLevel = 2 | 3 | 4;
 export interface ContentObject { raw?:string, rendered:string }
 export interface ContentObjectPropsWithHLevel extends ContentObject {
@@ -8,9 +10,10 @@ const RenderWithFallback : FC<ContentObject> = ({raw,rendered}) => {
     function createMarkup() {
         return { __html: rendered };
     };
-    //if (!raw) { 
+    if (!raw) { 
         return <div dangerouslySetInnerHTML={createMarkup()} />
-    //}
+    }
+    return <BlockContent rawContent={raw} />
 }
 
 export const PostExcerpt: FC<ContentObject> = (props) => <RenderWithFallback  {...props} />
