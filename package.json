@@ -6,12 +6,14 @@
 		"dev": "next dev",
 		"build": "next build",
 		"start": "next start",
-		"test": "jest"
+		"test": "jest",
+		"wordpress": "wp-env start"
 	},
 	"dependencies": {
 		"@tailwindcss/forms": "^0.2.1",
 		"@tailwindcss/typography": "^0.4.0",
 		"@testing-library/react": "^11.2.3",
+		"@wordpress/env": "^3.0.2",
 		"add": "^2.0.6",
 		"autoprefixer": "^10.0.4",
 		"next": "latest",

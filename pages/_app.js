@@ -5,7 +5,7 @@ function MyApp({ Component, pageProps }) {
     <>
       
       <div className="flex flex-col items-center justify-center min-h-screen py-2">
-        <main className="flex flex-col items-center justify-center flex-1 px-20 text-center">
+        <main className="flex flex-col  flex-1 px-20">
           <Component {...pageProps} />
         </main>
       </div>
@@ -16,8 +16,7 @@ function MyApp({ Component, pageProps }) {
           target="_blank"
           rel="noopener noreferrer"
         >
-          Powered by{' '}
-          <img src="/vercel.svg" alt="Vercel Logo" className="h-4 ml-2" />
+          View Source
         </a>
       </footer>
     </>

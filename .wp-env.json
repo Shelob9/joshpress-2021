@@ -1,0 +1,10 @@
+{
+	"core": null,
+	"plugins": [
+		"./plugin.php",
+		"https://downloads.wordpress.org/plugin/headless-mode.zip"
+	],
+	"config": {
+		"HEADLESS_MODE_CLIENT_URL": "http://localhost:3000"
+	}
+}
